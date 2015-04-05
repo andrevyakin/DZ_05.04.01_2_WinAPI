@@ -96,6 +96,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			wcscpy_s(temp, 49, text1);
 			SendMessage(edit1, WM_SETTEXT, sizeof(text2), (LPARAM)text2);
 			SendMessage(edit2, WM_SETTEXT, sizeof(temp), (LPARAM)temp);
+			MessageBox(hWnd, L"Заменено", L"", MB_OK);
 		}
 
 		
